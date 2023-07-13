@@ -1,0 +1,27 @@
+~/web/login.html
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <style>
+    * {margin: 0px;padding: 0px;}
+    #box {width: 500px;height: 250px;background-color: antiquewhite;position: absolute;left: 50%;top: 50%;margin: -125px -250px;}
+    h1 {width: 500px;height: 100px;background-color: aqua;display: table-cell;vertical-align: middle;text-align: center;}
+    .title{position: relative;top: 20px;left: 40px;font-weight: 1000;}
+    .res{position: relative;top: 20px;left: 60px;}
+    .text{position: relative;top: 20px;left: 90px;font-size: 12px;color:grey;}
+    .reset{position: relative;top: 20px;left: 150px;font-size: 20px;}
+    .submit{position: relative;top: 20px;left: 200px;font-size: 20px;}
+  </style>
+</head>
+
+<body>
+<div id="box">
+  <h1>登录模块</h1>
+  <form action="/login" method="post">
+    <span class="title">Username</span><input type="text" name="username" class="res"><span class="text">请输入用户名称</span><br /><br />
+    <span class="title">Password</span><input type="password" name="password" class="res"><span class="text">请输入账户密码</span><br /><br />
+    <input type="reset" value="重置" class="reset">
+    <input type="submit" value="登录" class="submit">
+  </form>
+</div>
+</body>
